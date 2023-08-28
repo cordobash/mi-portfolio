@@ -35,7 +35,7 @@ const Navbar = () => {
           setActive("");
           window.scrollTo(0,0);
       }} onScroll={() => setScrolled(true)}>
-        <img src={toggle ? menu : logo} alt="logo" className='w-9 h-9 object-contain' />
+        <img src={toggle ? close : logo} alt="logo" className='w-9 h-9 object-contain' />
         <p className='text-white text-[18px] font-bold cursor-pointer flex'>Isaias | &nbsp;
         <span className='sm:block hidden'>Desarrollador de software</span></p>
 

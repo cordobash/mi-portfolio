@@ -8,6 +8,7 @@ import {fadeIn, textVariant} from '../utils/motion';
 import { Tilt } from "react-tilt";
 import { SectionWrapper } from "../hoc";
 
+
 const ServiceCard = ({index, title, icon}) => {
   return(
     <>

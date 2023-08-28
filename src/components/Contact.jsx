@@ -24,8 +24,36 @@ const Contact = () => {
   }
 
   const handleSubmit = (e) => {
-    
+    e.preventDefault();
+    setLoading(true);
+    console.log(':)');
+    emailjs.send('service_lmtus8m','template_y41o9sy',
+    {
+      from_name: form.name,
+      to_name: 'Isaias',
+      from_email: form.email,
+      to_email:'com148237@gmail.com',
+      message: form.message
+    },
+    'FMEUxepJA6adnXdhh'  
+    ).then(() => {
+      setLoading(false);
+      alert('Gracias por contactarme, te respondere lo mas pronto posible')
+      
+    setForm({
+      name:'',
+      email:'',
+      message:'',
+      })
+    },(error) => {
+      setLoading(false);
+      console.log(error);
+      alert('Algo salio mal, intentalo de nuevo mas tarde')
+
+    })
   }
+    
+    
 
   
   return (
@@ -45,7 +73,7 @@ const Contact = () => {
         onSubmit={handleSubmit}
         className="mt-12 flex flex-col gap-8"
       >
-          <label className='flex flex-col'>
+          <label className='flex flex-col' >
             <span className='text-white font-medium mb-4'>Your name</span>
             {/* Name */}
             <input 
@@ -56,6 +84,7 @@ const Contact = () => {
               placeholder="What's your name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary
               text-white rounded-lg outlined-none border-none font-medium'
+              required
             />
           </label>
           {/* Email */}
@@ -69,11 +98,12 @@ const Contact = () => {
               placeholder="miemail@example.com"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary
               text-white rounded-lg outlined-none border-none font-medium'
+              required
             />
           </label>
           {/*  */}
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4' aria-required>Your Message</span>
             <textarea
               rows="7"
               name='message'
@@ -82,15 +112,13 @@ const Contact = () => {
               placeholder="What do you want to say?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary
               text-white rounded-lg outlined-none border-none font-medium'
-            />
+              required
+           />
           </label>
 
           <button
             type='submit'
-            onClick={(e) => {
-              e.preventDefault()
-              alert('La informacion de contacto ha sido enviada')   
-            }}
+            onSubmit={handleSubmit}
 
             className='bg-tertiary py-3 px-8 outline-none text-white font-bold
             shadow-md shadow-primary rounded-xl'
@@ -112,6 +140,6 @@ const Contact = () => {
 
     </div>
   )
-}
 
+          }
 export default SectionWrapper(Contact,'contact')
