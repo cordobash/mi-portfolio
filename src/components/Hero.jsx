@@ -5,6 +5,8 @@ import  ComputersCanvas from './canvas/Computers';
 import { SectionWrapper } from '../hoc';
 
 const Hero = () => {
+
+  const imgUrl = 'https://lardy-aids.000webhostapp.com/pic.jpg';
   return (
     <>
       <section className='relative w-full h-screen mx-auto'>
@@ -20,7 +22,17 @@ const Hero = () => {
             Desarrollo de software con <br className='sm:block hidden'/> ASP.NET Core, React, Node.js y más
           </p>
         </div>
-        <ComputersCanvas />
+        {/* <ComputersCanvas /> */}
+
+        {/* Imagen */}
+        <img src={imgUrl} alt='profile-pic'
+         style={{
+          'border-radius': '70% 30% 73% 27% / 28% 53% 47% 72%',
+          'width': '430px',
+          'height': '450px',
+          'margin': '0 auto'  
+        }} />
+      
 
 
      

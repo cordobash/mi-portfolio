@@ -9,11 +9,23 @@ import { logo , menu, close } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 50){
+        setScrolled(true);
+      }else{
+        setScrolled(false);
+      }
+    })
+  })
+
   return (
     <nav className={
       `
-      ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary
+      ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20
+      ${!scrolled ? 'bg-transparent' : 'bg-primary'}
       `
     }>
 
@@ -22,7 +34,7 @@ const Navbar = () => {
           () => { 
           setActive("");
           window.scrollTo(0,0);
-      }}>
+      }} onScroll={() => setScrolled(true)}>
         <img src={toggle ? menu : logo} alt="logo" className='w-9 h-9 object-contain' />
         <p className='text-white text-[18px] font-bold cursor-pointer flex'>Isaias | &nbsp;
         <span className='sm:block hidden'>Desarrollador de software</span></p>
