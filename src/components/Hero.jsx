@@ -3,10 +3,20 @@ import {motion} from 'framer-motion'
 import {styles} from '../styles';
 import  ComputersCanvas from './canvas/Computers';
 import { SectionWrapper } from '../hoc';
+import CustomButton from './CustomButton';
+// Importamos iconos respectivos a utilizar en esta area.
+// Github icon
+import {GrGithub as GithubIcon }  from 'react-icons/gr'
+// Linkedin icon
+import {BsLinkedin as LinkedInIcon } from 'react-icons/bs'
 
 const Hero = () => {
 
-  const imgUrl = 'https://lardy-aids.000webhostapp.com/pic.jpg';
+  const universalUrls = {
+    profilePic: 'https://lardy-aids.000webhostapp.com/pic.jpg',
+    githubProfile: 'https://github.com/IGerardoJR',
+    linkedinProfile: 'https://www.linkedin.com/in/isaias-gerardo-cordova-palomares-1586a2244/',
+  }
   return (
     <>
       <section className='relative w-full h-screen mx-auto'>
@@ -21,21 +31,44 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Desarrollo de software con <br className='sm:block hidden'/> ASP.NET Core, React, Node.js y más
           </p>
+
+
+          {/* Enlaces o redes sociales */}
+          <div className='h-[50px] w-[700px]' align="center" >
+            {/* Github */}
+            <a href="https://github.com/IGerardoJR"
+             alt='githubProfile'
+            target='_blank'
+            className='mt-10 h-[40px] w-[150px] bg-black font-white font-bold inline-flex  items-center justify-center
+            rounded-full cursor-pointer  mr-[40px] hover:animate-bounce'
+            onClick={() => window.open('https://github.com/IGerardoJR')}
+            ><GithubIcon size='25px' style={{marginRight: '5px'}}/> Github</a>
+            {/* Linkedin */}
+
+            <a 
+            href={universalUrls.linkedinProfile}
+            target='_blank'
+            className='mt-10 h-[40px] w-[130px] bg-blue-600 font-white font-bold  inline-flex items-center justify-center
+            rounded-full  mr-[20px] hover:animate-bounce
+            '
+            >
+              <LinkedInIcon size='25px' style={{marginRight: '5px'}}/>Linkedin 
+            </a>
+
+       
+         
+          </div>
         </div>
-        {/* <ComputersCanvas /> */}
 
         {/* Imagen */}
-        <img src={imgUrl} alt='profile-pic'
+        <img src={universalUrls.profilePic} alt='profile-pic'
          style={{
-          'border-radius': '70% 30% 73% 27% / 28% 53% 47% 72%',
+          'borderRadius': '70% 30% 73% 27% / 28% 53% 47% 72%',
           'width': '430px',
           'height': '450px',
           'margin': '0 auto'  
         }} />
-      
-
-
-     
+           
         </div>
         <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center
           items-center'>

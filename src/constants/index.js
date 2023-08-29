@@ -25,6 +25,8 @@ import {
     threejs,
   } from "../assets";
   
+
+  // Links que se mostraran en la barra de navegacion
   export const navLinks = [
     {
       id: "about",

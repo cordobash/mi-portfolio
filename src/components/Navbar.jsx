@@ -41,6 +41,7 @@ const Navbar = () => {
 
         </Link>
       
+            {/* Cuando el toggle no esta activo */}
           <ul className='list-none hidden sm:flex flex-row gap-10'>
             {navLinks.map((link) => (
               <li
@@ -53,6 +54,9 @@ const Navbar = () => {
                 <a href={`#${link.id}`}>{link.title}</a>
               </li>
             ))}
+          
+            
+
           </ul>
 
           <div className='sm:hidden flex flex-1 justify-end items-center'>

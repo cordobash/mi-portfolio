@@ -21,7 +21,7 @@ function App() {
             <div className="relative z-0">
               <Contact />
               <StarsCanvas />
-              <CustomButton uri='https://lardy-aids.000webhostapp.com/CV%20-%20Isaias%20Cordova-1.pdf' altText='CV_Personal' />
+              {/* <CustomButton /> */}
               
             </div>
           </div>
