@@ -19,8 +19,8 @@ const Hero = () => {
     linkedinProfile: 'https://www.linkedin.com/in/isaias-gerardo-cordova-palomares-1586a2244/',
     cvResource: 'https://lardy-aids.000webhostapp.com/CV%20-%20Isaias%20Cordova-1.pdf',
   }
+
   return (
-    <>
       <section className='relative w-full h-screen mx-auto'>
         <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7x1 mx-auto flex
         flex-row items-start gap-5`}>
@@ -44,7 +44,7 @@ const Hero = () => {
             className='mt-10 h-[40px] w-[150px] bg-black font-white font-bold inline-flex  items-center justify-center
             rounded-full cursor-pointer  mr-[25px] hover:animate-bounce'
             onClick={() => window.open('https://github.com/IGerardoJR')}
-            ><GithubIcon size='25px' style={{marginRight: '5px'}}/> Github</a>
+            ><GithubIcon size='25px' style={{marginRight: '1px'}}/> Github</a>
             {/* Linkedin */}
 
             <a 
@@ -54,7 +54,7 @@ const Hero = () => {
             rounded-full  mr-[25px] hover:animate-bounce
             '
             >
-              <LinkedInIcon size='25px' style={{marginRight: '5px'}}/>Linkedin 
+              <LinkedInIcon size='25px' style={{marginRight: '1px'}}/>Linkedin 
             </a>
           {/* Curriculum Vitae */}
           <a 
@@ -64,14 +64,13 @@ const Hero = () => {
             rounded-full  mr-[25px] hover:animate-bounce
             '
             >
-              <CvIcon size='25px' style={{marginRight: '5px'}}/>Ver CV 
+              <CvIcon size='25px' style={{marginRight: '1px'}}/>Ver CV 
             </a>
           
          
           </div>
         </div>
 
-        {/* Imagen */}
         <img src={universalUrls.profilePic} alt='profile-pic'
          style={{
           'borderRadius': '70% 30% 73% 27% / 28% 53% 47% 72%',
@@ -79,8 +78,10 @@ const Hero = () => {
           'height': '450px',
           'margin': '0 auto'  
         }} />
+        
            
         </div>
+     
         <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center
           items-center'>
             <a href="#about">
@@ -99,10 +100,11 @@ const Hero = () => {
                 />
               </div>
             </a>
+    
           </div>
+          
       </section>
-    </>
   )
 }
 
-export default  SectionWrapper(Hero,'hero')
+export default  SectionWrapper(Hero)
