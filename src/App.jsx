@@ -2,6 +2,7 @@
 import { BrowserRouter } from "react-router-dom";
 import {Contact, Experience,About, Feedbacks, Hero, Tech, Works, StarsCanvas, Navbar} from './components';
 import './index.css'
+import CustomButton from "./components/CustomButton";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
             <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
               <Navbar />
               <Hero />
+              
             </div>
             <About />
             <Experience />
@@ -19,6 +21,7 @@ function App() {
             <div className="relative z-0">
               <Contact />
               <StarsCanvas />
+              <CustomButton uri='https://lardy-aids.000webhostapp.com/CV%20-%20Isaias%20Cordova-1.pdf' altText='CV_Personal' />
               
             </div>
           </div>

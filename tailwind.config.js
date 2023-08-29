@@ -21,6 +21,10 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      ancleSize: {
+        'height': '200px',
+        'width': '150px',
+      },
     },
   },
   plugins: [],
