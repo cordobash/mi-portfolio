@@ -9,6 +9,7 @@ import CustomButton from './CustomButton';
 import {GrGithub as GithubIcon }  from 'react-icons/gr'
 // Linkedin icon
 import {BsLinkedin as LinkedInIcon } from 'react-icons/bs'
+import {RiFilePaper2Line as CvIcon} from 'react-icons/ri'
 
 const Hero = () => {
 
@@ -16,6 +17,7 @@ const Hero = () => {
     profilePic: 'https://lardy-aids.000webhostapp.com/pic.jpg',
     githubProfile: 'https://github.com/IGerardoJR',
     linkedinProfile: 'https://www.linkedin.com/in/isaias-gerardo-cordova-palomares-1586a2244/',
+    cvResource: 'https://lardy-aids.000webhostapp.com/CV%20-%20Isaias%20Cordova-1.pdf',
   }
   return (
     <>
@@ -34,13 +36,13 @@ const Hero = () => {
 
 
           {/* Enlaces o redes sociales */}
-          <div className='h-[50px] w-[700px]' align="center" >
+          <div className='h-[50px] w-[700px]' align="left" >
             {/* Github */}
             <a href="https://github.com/IGerardoJR"
              alt='githubProfile'
             target='_blank'
             className='mt-10 h-[40px] w-[150px] bg-black font-white font-bold inline-flex  items-center justify-center
-            rounded-full cursor-pointer  mr-[40px] hover:animate-bounce'
+            rounded-full cursor-pointer  mr-[25px] hover:animate-bounce'
             onClick={() => window.open('https://github.com/IGerardoJR')}
             ><GithubIcon size='25px' style={{marginRight: '5px'}}/> Github</a>
             {/* Linkedin */}
@@ -49,13 +51,22 @@ const Hero = () => {
             href={universalUrls.linkedinProfile}
             target='_blank'
             className='mt-10 h-[40px] w-[130px] bg-blue-600 font-white font-bold  inline-flex items-center justify-center
-            rounded-full  mr-[20px] hover:animate-bounce
+            rounded-full  mr-[25px] hover:animate-bounce
             '
             >
               <LinkedInIcon size='25px' style={{marginRight: '5px'}}/>Linkedin 
             </a>
-
-       
+          {/* Curriculum Vitae */}
+          <a 
+            href={universalUrls.cvResource}
+            target='_blank'
+            className='mt-10 h-[40px] w-[130px] bg-green-600 font-white font-bold  inline-flex items-center justify-center
+            rounded-full  mr-[25px] hover:animate-bounce
+            '
+            >
+              <CvIcon size='25px' style={{marginRight: '5px'}}/>Ver CV 
+            </a>
+          
          
           </div>
         </div>
