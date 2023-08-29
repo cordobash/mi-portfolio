@@ -21,50 +21,51 @@ const Hero = () => {
   }
 
   return (
-      <section className='relative w-full h-screen mx-auto'>
-        <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7x1 mx-auto flex
+      <section className='w-full h-[600px] mx-auto '>
+        <div className={`${styles.paddingY} absolute inset-0 top-[120px] max-w-7x1 mx-auto flex
         flex-row items-start gap-5`}>
           <div className='flex flex-col justify-center items-center mt-5'>
             <div className='w-5 h-5 rounded-full bg-[#915eff]' />
             <div className='w-1 sm:h-80 h-40 violet-gradient' />
           </div>
         <div className=''>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hola, soy <span className='text-[#915eff]'>Isaias</span></h1>
+          <h1 className={`${styles.heroHeadText} text-white`}>Hola, soy <span className='text-[#915eff] sm:block xs:min-h[320px] flex'>Isaias</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Desarrollo de software con <br className='sm:block hidden'/> ASP.NET Core, React, Node.js y más
+            Desarrollo software con <br className='sm:block  xs:min-h[320px] block  '/> ASP.NET Core, React, Node.js y más
           </p>
 
-
+          {/* Separacion */}
           {/* Enlaces o redes sociales */}
-          <div className='h-[50px] w-[700px]' align="left" >
+          <div className='h-[50px] w-[700px] xs:block' >
             {/* Github */}
             <a href="https://github.com/IGerardoJR"
              alt='githubProfile'
             target='_blank'
-            className='mt-10 h-[40px] w-[150px] bg-black font-white font-bold inline-flex  items-center justify-center
-            rounded-full cursor-pointer  mr-[25px] hover:animate-bounce'
+            className='mt-10 h-[40px] w-[150px] bg-black font-white font-bold lg:inline-flex  items-center justify-center
+            rounded-full cursor-pointer  mr-[15px] hover:animate-bounce xs:min-h[320px] flex '
             onClick={() => window.open('https://github.com/IGerardoJR')}
-            ><GithubIcon size='25px' style={{marginRight: '1px'}}/> Github</a>
-            {/* Linkedin */}
+            ><GithubIcon size='25px' style={{marginRight: '7px'}}/> Github</a>
 
+            {/* Linkedin */}
             <a 
             href={universalUrls.linkedinProfile}
             target='_blank'
-            className='mt-10 h-[40px] w-[130px] bg-blue-600 font-white font-bold  inline-flex items-center justify-center
-            rounded-full  mr-[25px] hover:animate-bounce
+            className='mt-10 h-[40px] w-[135px] bg-blue-600 font-white font-bold  lg:inline-flex items-center justify-center
+            rounded-full    xs:min-h[320px] flex mr-[15px]
             '
             >
-              <LinkedInIcon size='25px' style={{marginRight: '1px'}}/>Linkedin 
+              <LinkedInIcon size='25px' style={{marginRight: '7px'}}/> Linkedin
             </a>
           {/* Curriculum Vitae */}
+
           <a 
             href={universalUrls.cvResource}
             target='_blank'
-            className='mt-10 h-[40px] w-[130px] bg-green-600 font-white font-bold  inline-flex items-center justify-center
-            rounded-full  mr-[25px] hover:animate-bounce
+            className='mt-10 h-[40px] w-[130px] bg-green-600 font-white font-bold  lg:inline-flex items-center justify-center
+            rounded-full   hover:animate-bounce xs:min-h[320px] flex
             '
             >
-              <CvIcon size='25px' style={{marginRight: '1px'}}/>Ver CV 
+              <CvIcon size='25px' style={{marginRight: '6px'}}/>Ver CV 
             </a>
           
          
@@ -77,12 +78,12 @@ const Hero = () => {
           'width': '430px',
           'height': '450px',
           'margin': '0 auto'  
-        }} />
+        }} className='xs:block hidden '/>
         
            
         </div>
      
-        <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center
+        <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center mt-1
           items-center'>
             <a href="#about">
               <div className='w-[35px] h-[64px] rounded-full border-2  border-secondary
@@ -96,12 +97,12 @@ const Hero = () => {
                   repeat: Infinity,
                   repeatType: 'loop'
                 }}
-                className="w-3 h-3 rounded-full bg-secondary  mb-1"
+                className="w-3 h-3 rounded-full bg-secondary  mb-1 "
                 />
               </div>
             </a>
-    
           </div>
+   
           
       </section>
   )
