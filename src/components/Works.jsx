@@ -98,7 +98,7 @@ const Works = () => {
         <div className='w-full flex'>
             <motion.p
               variants={fadeIn("","",0.1,1)}
-              className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+              className='mt-3 text-secondary text-[17px] max-w-3xl leading-[20px]'
             >
               En esta seccion se muestran algunos de mis proyectos personales, en los que 
               he trabajado en mi tiempo libre a lo largo de los años.
@@ -106,7 +106,7 @@ const Works = () => {
             </motion.p>
           </div>  
 
-          <div className='mt-20 flex flex-wrap gap-7'>
+          <div className='mt-20 flex flex-wrap gap-5'>
             {projects.map((project,index) => (
               <ProjectCard key={`project-${index}`}
                 index={index}
@@ -119,4 +119,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works,"works")
+export default SectionWrapper(Works,"proyectos")

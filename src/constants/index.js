@@ -43,7 +43,7 @@ import {
       title: "Acerca de mi",
     },
     {
-      id: "projects",
+      id: "proyectos",
       title: "Proyectos",
     },
     {

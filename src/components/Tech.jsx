@@ -27,14 +27,6 @@ const Tech = () => {
       <BiLogoMongodb size='100px'  color='white'   className='hover:opacity-50' style={{color: '#0F9151'}} />
       <PiFileSqlDuotone size='100px'  color='white'   className='hover:opacity-50' style={{color: '#DE7734'}} />
       <TbBrandCpp size='100px'  color='white'   className='hover:opacity-50' style={{color: '#00599C'}} />
-      
-
-
-
-
-
-
-
     </div>
   )
 }
