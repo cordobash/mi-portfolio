@@ -104,7 +104,7 @@ import {
     },
     {
       title: "React Native Developer",
-      icon: <iJavascript />,
+      icon: javascript,
     },
     {
       title: "Backend Developer",

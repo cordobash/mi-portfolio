@@ -7,14 +7,26 @@ import {services} from '../constants/index';
 import {fadeIn, textVariant} from '../utils/motion';
 import { Tilt } from "react-tilt";
 import { SectionWrapper } from "../hoc";
+// Iconos
+import {BiLogoJavascript} from 'react-icons/bi';
+import {BiLogoReact} from 'react-icons/bi';
+import {FcLinux} from 'react-icons/fc';
+import {SiDotnet} from 'react-icons/si';
+import {SiAndroidstudio} from 'react-icons/si';
+import {TbBrandCpp} from 'react-icons/tb';
 
+import {SiCsharp} from 'react-icons/si';
+
+// Este icono representara asp.net
+import {DiDotnet} from 'react-icons/di';
+import {LiaVuejs} from 'react-icons/lia';
 
 const ServiceCard = ({index, title, icon}) => {
   return(
     <>
       <Tilt className="xs:w-[250px] w-full">
         <motion.div variants={fadeIn("right","spring",0.5 * index,0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full green-pink-gradient p-[2px] rounded-[20px] shadow-card lg:w-[210px] m-[5px]"
         >
 
           <div
@@ -25,7 +37,8 @@ const ServiceCard = ({index, title, icon}) => {
           }} className="bg-tertiary rounded-[20px] py-5 px-12 min-h[320px] flex justify-evenly
           items-center flex-col">
 
-            <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+            {/* <img src={icon} alt={title} className="w-16 h-16 object-contain" /> */}
+            <span className="w-16 h-16 object-contain align-center justify-center flex">{icon}</span>
             <h3 className="text-white text-[20px] font-bold">{title}</h3>
 
           </div>
@@ -53,11 +66,7 @@ const About = () => {
     </motion.p>
 
 
-    <div className="mt-20 flex flex-wrap gap-10">
-      {services.map((service, index) => (
-        <ServiceCard key={service.title} index={index} {...service} />
-      ))}
-    </div>
+   
     </>
   )
 }
