@@ -33,7 +33,15 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import logoFinal from './logo2.png'
+import tyson from './TysonLogo.png'
 
+import dotstall from './dotstallImage.png'
+import portfolio from './portfolioImage.png'
+import pyspark from './pyspark.png'
+import recetasimage from './recetasjsimage.png'
+
+import librosnet from './librosnet.png'
+import invernaderoDomImg from './invernaderoDom.jpg'
 export {
   logo,
   backend,
@@ -63,5 +71,12 @@ export {
   carrent,
   jobit,
   tripguide,
-  logoFinal
+  logoFinal,
+  tyson,
+  dotstall,
+  portfolio,
+  pyspark,
+  recetasimage,
+  librosnet,
+  invernaderoDomImg,
 };

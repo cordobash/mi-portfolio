@@ -8,6 +8,17 @@ import { textVariant, fadeIn } from '../utils/motion';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 
+const Circulo = ({color}) => {
+  return(
+    <div className='rounded-full w-4 h-4 inline-flex mr-[5px]' style={{
+      backgroundColor: color,
+    }}>
+      
+    </div>
+  )
+}
+
+
 const ProjectCard = ({index,name,description,tags,image,source_code_link}) => {
   return (
     <motion.div variants={fadeIn("up","spring", index * 0.5,0.75)}>
@@ -61,7 +72,7 @@ const ProjectCard = ({index,name,description,tags,image,source_code_link}) => {
         >
             {tags.map((tag) => (
               <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-                  #{tag.name}
+                  <Circulo color={tag.color}   />{tag.name} 
               </p>
             ))}
         </div>
@@ -75,11 +86,11 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
-          my work
+          mis trabajos personales
         </p>
 
         <h2 className={styles.sectionHeadText}>
-          Projects
+          Proyectos
         </h2>
         
         </motion.div>
@@ -89,9 +100,8 @@ const Works = () => {
               variants={fadeIn("","",0.1,1)}
               className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
             >
-
-              Lorem ipsum dolor sit amet, consectetur adipisicing 
-              elit. Incidunt molestias magnam dolorem velit distinctio amet, assumenda exercitationem commodi voluptatem sapiente reprehenderit enim odit tempora vel, sunt adipisci culpa quaerat ea.
+              En esta seccion se muestran algunos de mis proyectos personales, en los que 
+              he trabajado en mi tiempo libre a lo largo de los años.
 
             </motion.p>
           </div>  

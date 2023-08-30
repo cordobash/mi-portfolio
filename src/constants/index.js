@@ -23,33 +23,88 @@ import {
     jobit,
     tripguide,
     threejs,
+    
+    // Imagenes utilizadas para el area de proyecos
+    tyson,
+    dotstall,
+    portfolio,
+    pyspark,
+    recetasimage,
+    librosnet,
+    invernaderoDomImg
   } from "../assets";
   
+  import {BiLogoJavascript as iJavascript} from 'react-icons/bi'
 
   // Links que se mostraran en la barra de navegacion
   export const navLinks = [
     {
-      id: "about",
-      title: "About",
+      id: "acerca",
+      title: "Acerca de mi",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "projects",
+      title: "Proyectos",
     },
     {
-      id: "contact",
-      title: "Contact",
+      id: "experiencia",
+      title: "Experiencia",
+    },
+    {
+      id: "contacto",
+      title: "Contacto",
     },
   ];
   
+  // Tecnologias
+// const tecnologias = [
+//   {
+//     nombre: 'React',
+//     icono: reactjs,
+//   },
+//   {
+//     nombre: 'Javascript',
+//     icono: javascript,
+//   },
+
+//   {
+//     nombre: 'Nodejs',
+//     icono: nodejs,
+
+//   },
+
+//   {
+//     nombre: 'Vue',
+//     icono: vuejs,
+//   }
+// ,
+//   {
+//     nombre: 'Java',
+//     icono: java,
+//   }
+// ,
+//   {
+//     nombre: 'C++',
+//     icono: cpp,
+//   }
+//   ,
+//   {
+//     nombre: 'C#',
+//     icono: csharp,
+//   }
+
+// ]
+
+
+
   const services = [
     {
       title: "Web Developer",
-      icon: web,
+      icon: reactjs,
     },
     {
       title: "React Native Developer",
-      icon: mobile,
+      icon: <iJavascript />,
     },
     {
       title: "Backend Developer",
@@ -115,60 +170,57 @@ import {
       icon: docker,
     },
   ];
-  
+
+  const paletaColores = {
+    primary: "#002554",
+    secondary: "#aaa6c3",
+    shell: "#A5F185",
+    html: "#E44D26",
+    css: "#264DE4",
+    tailwind: "#38B2AC",
+    javascript: "#F7DF1E",
+    react: "#61DBFB",
+    csharp: "#239120",
+    nodejs: "#339933",
+    swift: "#FA7343",
+    linux: "#FCC624",
+    flutter: "#02569B",
+    java: "#007396",
+    blazor: "#512BD4",
+    windowManager: "#FE7E7E",
+    vue: "#41B883",
+    mongo: "#47A248",
+    arduino: "#00979D",
+    cpp: "#00599C",
+    firebase: "#FFCA28",
+    android: "#3DDC84",
+    lua: "#2C2D72",
+    rasi: "#A8FF97",
+    ini: "#FFD580",
+    ipynb: "#F37726",
+    python: "#3776AB",
+    aspnet: "#512BD4",
+    
+    
+  }
+
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Intern",
+      company_name: "Tyson Foods",
+      icon: tyson,
+      iconBg: "#002554",
+      date: "Enero 2023 - Junio 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Resolucion de problematicas a usuarios(HelpDesk).",
+        "Mantenimiento a software empresarial.",
+        "Manejo de bases de datos relacionales.",
+        "Monitoreo de microservicios con Kubernetes.",
       ],
     },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
+    
+ 
   ];
   
   const testimonials = [
@@ -200,68 +252,139 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      name: "Dotstaller",
+      description: "Script para la instalacion y automatizacion de mis archivos personalizados utilizados en el gestor de ventanas BSPWM, el script de momento cuenta con compatibilidad con Arch Linux",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Linux",
+          color: paletaColores.linux,
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "Shell",
+          color: paletaColores.shell,
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
+          name: "bspwm",
+          color: paletaColores.windowManager,
+        }
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: dotstall,
+      source_code_link: "https://github.com/IGerardoJR/Dotstaller",
     },
     {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      name: "Recetas JS",
+      description: "Sitio web de recetas de cocina, con la finalidad de practicar mis habilidades en el desarrollo web, el sitio web cuenta con un buscador de recetas, un apartado de recetas favoritas, y un apartado de recetas creadas por el usuario.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Vue",
+          color: paletaColores.vue,
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
+          name: "Nodejs",
+          color: paletaColores.nodejs,
         },
         {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "Javascript",
+          color: paletaColores.javascript,
         },
+        {
+          name: "Mongodb",
+          color: paletaColores.mongo,
+        }
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: recetasimage,
+      source_code_link: "https://github.com/IGerardoJR/RecetasJS",
     },
     {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      name: "Invernadero Domotizado",
+      description: "Este proyecto tuvo como finalidad el desarrollo de un sistema de control de temperatura y humedad para un invernadero, el sistema cuenta con un panel de control web, una aplicacion movil y un sistema de control de temperatura y humedad.",
       tags: [
         {
-          name: "nextjs",
-          color: "blue-text-gradient",
+          name: "Arduino",
+          color: paletaColores.arduino,
         },
         {
-          name: "supabase",
-          color: "green-text-gradient",
+          name: "C++",
+          color: paletaColores.cpp,
+        },
+        {
+          name: "Firebase",
+          color: paletaColores.firebase,
+        },
+        {
+          name: "Android",
+          color: paletaColores.android,
+        }
+
+      ],
+      image: invernaderoDomImg,
+      source_code_link: "https://github.com/IGerardoJR/InvernaderoDomotizado-x-Arduino",
+    },
+    {
+      name: "Portafolio Personal",
+      description: "La finalidad del desarrollo de un portafolio es mostrar ante el publico la experiencia, proyectos y certificaciones que he obtenido a lo largo de mi carrera profesional, asi como tambien mostrar mis habilidades en el area de IT.",
+      tags: [
+        {
+          name: "React",
+          color: paletaColores.react,
+        },
+        {
+          name: "Javascript",
+          color: paletaColores.javascript,
+        },
+        {
+          name: "Tailwind",
+          color: paletaColores.tailwind,
+        }
+      ],
+      image: portfolio,
+      source_code_link:"https://github.com/IGerardoJR/InvernaderoDomotizado-x-Arduino",
+    },
+    {
+      name: "PySpark",
+      description:"Proyecto escolar realizado en la materia de Big Data, con la finalidad de manipular datos de un archivo csv, y realizar un analisis de datos con pyspark e almacenarlos en una base de datos no relacional.",
+      tags: [
+        {
+          name: "Python",
+          color: paletaColores.python,
+        },
+        {
+          name: "Jupyter",
+          color: paletaColores.ipynb,
+        },
+        {
+          name: "MongoDB",
+          color: paletaColores.mongo,
+        }
+      ],
+      image: pyspark,
+      source_code_link: "https://github.com/IGerardoJR/PySpark-MongoDB/blob/main/PyMongo.ipynb"
+    },
+    {
+      name: "LibrosNet",
+      description: "Aplicacion piloto realizada para practicar los fundamentos y bases de ASP.Net. La realizacion de este proyecto me permitio fortalecer mis conocimientos en la parte web y de programacion en C#.",
+      tags:[
+        {
+          name: "Asp.Net",
+          color: paletaColores.aspnet,
+        },
+        {
+          name: "html",
+          color: paletaColores.html,
         },
         {
           name: "css",
-          color: "pink-text-gradient",
+          color: paletaColores.css,
+        },
+        {
+          name: "csharp",
+          color: paletaColores.csharp,
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: librosnet,
+      source_code_link: "https://github.com/IGerardoJR/LibrosApp",
     },
+ 
   ];
   
   export { services, technologies, experiences, testimonials, projects };

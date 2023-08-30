@@ -51,7 +51,7 @@ const Hero = () => {
             href={universalUrls.linkedinProfile}
             target='_blank'
             className='mt-10 h-[40px] w-[135px] bg-blue-600 font-white font-bold  lg:inline-flex items-center justify-center
-            rounded-full    xs:min-h[320px] flex mr-[15px]
+            rounded-full  xs:min-h[320px] flex mr-[15px] hover:animate-bounce xs:min-[320px] 
             '
             >
               <LinkedInIcon size='25px' style={{marginRight: '7px'}}/> Linkedin
@@ -62,7 +62,7 @@ const Hero = () => {
             href={universalUrls.cvResource}
             target='_blank'
             className='mt-10 h-[40px] w-[130px] bg-green-600 font-white font-bold  lg:inline-flex items-center justify-center
-            rounded-full   hover:animate-bounce xs:min-h[320px] flex
+            rounded-full   hover:animate-bounce transition-all duration-100 xs:min-h[320px] flex
             '
             >
               <CvIcon size='25px' style={{marginRight: '6px'}}/>Ver CV 
