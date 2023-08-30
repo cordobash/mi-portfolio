@@ -1,8 +1,8 @@
 // Importando las librerias necesarias
 import { BrowserRouter } from "react-router-dom";
-import {Contact, Experience,About, Feedbacks, Hero, Tech, Works, StarsCanvas, Navbar} from './components';
+import {Contact, Experience,About, Feedbacks, Hero, Works,Tech, StarsCanvas, Navbar} from './components';
 import './index.css'
-import CustomButton from "./components/CustomButton";
+
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
             <About />
             <Experience />
             <Tech />
+            {/* <Tecnologias /> */}
             <Works />
             <Feedbacks />
             <div className="relative z-0">
