@@ -42,6 +42,17 @@ import recetasimage from './recetasjsimage.png'
 
 import librosnet from './librosnet.png'
 import invernaderoDomImg from './invernaderoDom.jpg'
+
+import hackmty from './hackmtylogo.svg'
+import siticlogo from './sitic-logo.png'
+import banortehacklogo from './banortehack-logo.png'
+import tecnmlogo from './logotecnm.png'
+import icpclogo from './icpclogo.png'
+import itsnpedro from './itsnpedro.png'
+// Certificados , Diplomas u reconocimiento
+import certificadoHackMty from './certHackMty.png'
+import certificadoSanPedro from './certsnp.png'
+import certificadoIcpc from './certicpc.png'
 export {
   logo,
   backend,
@@ -79,4 +90,13 @@ export {
   recetasimage,
   librosnet,
   invernaderoDomImg,
+  hackmty,
+  siticlogo,
+  banortehacklogo,
+  tecnmlogo,
+  icpclogo,
+  itsnpedro,
+  certificadoHackMty,
+  certificadoSanPedro,
+  certificadoIcpc,
 };

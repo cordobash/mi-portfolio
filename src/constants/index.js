@@ -31,7 +31,18 @@ import {
     pyspark,
     recetasimage,
     librosnet,
-    invernaderoDomImg
+    invernaderoDomImg,
+    // Logos - Adicionales
+    hackmty,
+    itsnpedro,
+    icpclogo,
+    tecnmlogo,
+    banortehacklogo,
+    siticlogo,
+    // Certificados, diplomas o reconocimientos
+    certificadoHackMty,
+    certificadoSanPedro,
+    certificadoIcpc,
   } from "../assets";
   
   import {BiLogoJavascript as iJavascript} from 'react-icons/bi'
@@ -164,6 +175,7 @@ import {
     aspnet: "#512BD4",
     
     
+    
   }
 
   const experiences = [
@@ -185,41 +197,54 @@ import {
  
   ];
 
-  const expAdicionales = [
+  export const expAdicionales = [
     {
       tipo: 'Concurso',
+      imagen: certificadoHackMty,
       nombre: 'Hack Mty',
-      imagen: 'https://hackmty.com/assets/images/logo.svg',
+      lugar: 'Tecnologico de Monterrey',
+      logo_evento: hackmty,
       fecha: 'Septiembre 2022',
     },
     {
       tipo: 'Asistencia a Taller',
+      imagen: '',
       nombre: 'Desarrollo de aplicaciones profesionales',
-      imagen: 'sitic',
-      fecha: 'Septiembre 2022 - Noviembre 2022'
+      lugar: 'SITIC',
+      logo_evento: siticlogo,
+      fecha: 'Sep 2022 - Nov 2022'
     },
     {
       tipo: 'Imparticion de Taller',
+      imagen: '',
       nombre: 'Django X Linux',
-      imagen: 'django',
+      lugar: 'Tecnm Piedras Negras',
+      logo_evento: tecnmlogo,
       fecha: 'Noviembre 2022',
     },
     {
       tipo: 'Concurso',
+      imagen: '',
       nombre: 'Hack Banorte',
-      imagen: 'Banorte',
+      lugar: 'Torre Koi',
+      logo_evento: banortehacklogo,
       fecha: 'Mayo 2023'
     },
     {
       tipo: 'Concurso',
+      imagen: certificadoIcpc,
       nombre: 'ICPC Mexico',
-      imagen: 'icpc',
+      lugar: 'Online',
+      logo_evento: icpclogo,
       fecha: 'Mayo 2022',
     },
     {
       tipo: 'Concurso',
+      imagen: certificadoSanPedro,
       nombre: 'IT San Pedro Contest',
-      imagen: 'itsanpedro',
+      lugar: 'Online',
+      logo_evento: itsnpedro,
+      logo_evento: 'itsanpedro',
       fecha: 'Mayo 2022',
     }
   ]

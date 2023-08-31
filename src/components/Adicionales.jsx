@@ -4,41 +4,46 @@ import { styles } from '../styles'
 
 import { SectionWrapper } from '../hoc'
 import { fadeIn,textVariant } from '../utils/motion'
-import { testimonials } from '../constants'
-import imagen from '../assets/invernaderoDom.jpg'
 
-const Experiencia = ({index,testimonial,name,designation,company,image}) =>{
+// import imagen from '../assets/invernaderoDom.jpg'
+// import imagen2 from '../assets/hackmtylogo.svg'
+
+
+import { expAdicionales } from '../constants'
+
+
+
+const Experiencia = ({index,tipo,imagen,nombre,lugar,logo_evento,fecha}) =>{
   return(
     <motion.div
       variants={fadeIn("","spring",index * 0.5, 0.75)}
-      className='bg-black-200 h-[380px] p-7 rounded-3xl xs:w-[320px] w-full'
+      className='bg-black-200 h-[420px] p-10 rounded-3xl xs:w-[320px] w-full inline-flex m-[10px]'
 
     >
       <div className='relative w-full h-[170px] gap-5'>
-        <p className={`${styles.sectionSubText} align-center justify-center items-center mb-5 flex`} >Concurso</p>
-          {/* Logo(Hack, Curso o Institucion ) */}
+        <p className={`${styles.sectionSubText} align-center justify-center items-center mb-5 flex`} >{tipo}</p>
+          {/* Imagen Experiencia */}
         <img src={imagen} alt='imagen'
           className='w-full h-full object-cover rounded-none rounded-tr-3xl rounded-bl-3xl'
         />
           
             {/* Titulo Experiencia */}
-            <p className='align-center  items-center justify-center flex font-bold mt-[12px]'>
-              Hack Mty
-              </p>
-              <div className='items-center justify-center m-[4px]' align="center">
-              <img src={imagen} alt='imagen' className='rounded-full align-center  w-[35px] h-[35px] cursor-pointer
+            <div className='align-center  items-center justify-center flex font-bold mt-[12px]'>
+              <p>{nombre} </p>
+              </div>
+              <p className='align-center items-center justify-center flex text-secondary mt-[2px]'>{lugar}</p>
+                {/* Logo experiencia */}
+              <div className='items-center justify-center m-[4px] rounded-full' align="center">
+              <img src={logo_evento} alt='imagen' className=' align-center  w-[40px] h-[40px] 
               '
-                onClick={() => window.open('https://hackmty.com/', '_blank')}
+                
               />
               </div>
-              {/* Imagen Experiencia */}
               
                 {/* Año de la experiencia */}
             <span className='align-center  items-center justify-center flex text-gray-500 '>
-              2022</span>
-            
-          
-          
+              {fecha}</span>
+                      
             </div>
         
     
@@ -47,6 +52,7 @@ const Experiencia = ({index,testimonial,name,designation,company,image}) =>{
 }
 
 const Adicionales = () => {
+
   return (
     <div
       className='mt-12 bg-black-100 rounded-[20px]'
@@ -70,7 +76,23 @@ const Adicionales = () => {
             
           
         </div>
-      <Experiencia />
+      {/* <Experiencia /> */}
+      
+      {expAdicionales.map((elemento,index) => {
+        return(
+          <Experiencia
+          key={index}
+          index={index}
+          tipo={elemento.tipo}
+          imagen={elemento.imagen}
+          nombre={elemento.nombre}
+          lugar={elemento.lugar}
+          logo_evento={elemento.logo_evento}
+          fecha={elemento.fecha}
+          />
+          )
+        })}
+      
 
         
       </div>
