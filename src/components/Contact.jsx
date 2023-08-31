@@ -121,7 +121,7 @@ const Contact = () => {
             onSubmit={handleSubmit}
 
             className='bg-tertiary py-3 px-8 outline-none text-white font-bold
-            shadow-md shadow-primary rounded-xl'
+            shadow-md shadow-primary rounded-xl hover:bg-violet-500 transition duration-400 ease-in'
 
           >
             {loading ? 'Enviando...' : 'Enviar'}

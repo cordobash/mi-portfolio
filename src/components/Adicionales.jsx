@@ -11,14 +11,14 @@ const Experiencia = ({index,testimonial,name,designation,company,image}) =>{
   return(
     <motion.div
       variants={fadeIn("","spring",index * 0.5, 0.75)}
-      className='bg-black-200 h-[400px] p-7 rounded-3xl xs:w-[320px] w-full'
+      className='bg-black-200 h-[380px] p-7 rounded-3xl xs:w-[320px] w-full'
 
     >
       <div className='relative w-full h-[170px] gap-5'>
         <p className={`${styles.sectionSubText} align-center justify-center items-center mb-5 flex`} >Concurso</p>
           {/* Logo(Hack, Curso o Institucion ) */}
         <img src={imagen} alt='imagen'
-          className='w-full h-full object-cover rounded-none'
+          className='w-full h-full object-cover rounded-none rounded-tr-3xl rounded-bl-3xl'
         />
           
             {/* Titulo Experiencia */}
@@ -75,8 +75,12 @@ const Adicionales = () => {
         
       </div>
 
-      <div className='flex flex-row items-center justify-center h-[50px] m-[30px] pb-[20px]'>
-              <button className=' font-white font-bold  inline-block hover:animate-ping'>
+      <div className='flex flex-row items-center justify-center h-[50px] m-[30px] pb-[20px] '>
+              <button className=' font-white font-bold 
+                rounded-full h-[50px] w-[300px] hover:bg-violet-500 transition duration-300 ease-linear  hover:text-white hover:text-bold    
+               '
+              onClick={() => window.open('https://www.github.com/IGerardoJR','_blank')}
+               >
                 Ver certificaciones
               </button>
       </div>
