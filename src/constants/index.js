@@ -43,6 +43,10 @@ import {
     certificadoHackMty,
     certificadoSanPedro,
     certificadoIcpc,
+    ccupImage,
+    logoUdemy,
+    udemyCertAsp,
+    hackBanorte,
   } from "../assets";
   
   import {BiLogoJavascript as iJavascript} from 'react-icons/bi'
@@ -180,7 +184,7 @@ import {
 
   const experiences = [
     {
-      title: "Intern",
+      title: "Intern at DevOps ",
       company_name: "Tyson Foods",
       icon: tyson,
       iconBg: "#002554",
@@ -207,14 +211,6 @@ import {
       fecha: 'Septiembre 2022',
     },
     {
-      tipo: 'Asistencia a Taller',
-      imagen: '',
-      nombre: 'Desarrollo de aplicaciones profesionales',
-      lugar: 'SITIC',
-      logo_evento: siticlogo,
-      fecha: 'Sep 2022 - Nov 2022'
-    },
-    {
       tipo: 'Imparticion de Taller',
       imagen: '',
       nombre: 'Django X Linux',
@@ -223,8 +219,17 @@ import {
       fecha: 'Noviembre 2022',
     },
     {
-      tipo: 'Concurso',
+      tipo: 'Asistencia a Taller',
       imagen: '',
+      nombre: 'Desarrollo de aplicaciones empresariales',
+      lugar: 'SITIC',
+      logo_evento: siticlogo,
+      fecha: 'Sep 2022 - Nov 2022'
+    },
+  
+    {
+      tipo: 'Concurso',
+      imagen: hackBanorte,
       nombre: 'Hack Banorte',
       lugar: 'Torre Koi',
       logo_evento: banortehacklogo,
@@ -244,8 +249,23 @@ import {
       nombre: 'IT San Pedro Contest',
       lugar: 'Online',
       logo_evento: itsnpedro,
-      logo_evento: 'itsanpedro',
       fecha: 'Mayo 2022',
+    },
+    {
+      tipo: 'Concurso',
+      imagen: ccupImage,
+      nombre: 'Coding Cup 2022',
+      lugar: 'Online',
+      logo_evento: tecnmlogo,
+      fecha: 'Octubre 2022',
+    },
+    {
+      tipo: 'Curso',
+      imagen: udemyCertAsp,
+      nombre: 'ASP.Net MVC and C#',
+      lugar: 'Udemy',
+      logo_evento: logoUdemy,
+      fecha: 'Agosto 2023',
     }
   ]
   

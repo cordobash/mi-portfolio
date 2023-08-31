@@ -49,10 +49,15 @@ import banortehacklogo from './banortehack-logo.png'
 import tecnmlogo from './logotecnm.png'
 import icpclogo from './icpclogo.png'
 import itsnpedro from './itsnpedro.png'
+import logoUdemy from './logo-udemy.svg'
 // Certificados , Diplomas u reconocimiento
 import certificadoHackMty from './certHackMty.png'
 import certificadoSanPedro from './certsnp.png'
 import certificadoIcpc from './certicpc.png'
+import ccupImage from './ccup2022.png'
+import udemyCertAsp from './udemyAspNet.jpg'
+// Imagenes complementarias
+import hackBanorte from './hackBanorte.jpg'
 export {
   logo,
   backend,
@@ -99,4 +104,8 @@ export {
   certificadoHackMty,
   certificadoSanPedro,
   certificadoIcpc,
+  ccupImage,
+  udemyCertAsp,
+  logoUdemy,
+  hackBanorte,
 };
