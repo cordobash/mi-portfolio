@@ -64,8 +64,8 @@ const Contact = () => {
         variants={slideIn('left','tween',0.2,1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.heroSubText}>Get in touch</p>
-        <h3 className={styles.heroHeadText}>Contact</h3>
+        <p className={styles.heroSubText}>Pongámonos en</p>
+        <h3 className={styles.heroHeadText}>Contacto</h3>
 
 
       <form
@@ -74,14 +74,14 @@ const Contact = () => {
         className="mt-12 flex flex-col gap-8"
       >
           <label className='flex flex-col' >
-            <span className='text-white font-medium mb-4'>Your name</span>
+            <span className='text-white font-medium mb-4'>Tu nombre</span>
             {/* Name */}
             <input 
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder="¿Como te llamas?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary
               text-white rounded-lg outlined-none border-none font-medium'
               required
@@ -89,13 +89,13 @@ const Contact = () => {
           </label>
           {/* Email */}
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4'>Tu email</span>
             <input 
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="miemail@example.com"
+              placeholder="micorreo@gmail.com"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary
               text-white rounded-lg outlined-none border-none font-medium'
               required
@@ -103,13 +103,13 @@ const Contact = () => {
           </label>
           {/*  */}
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4' aria-required>Your Message</span>
+            <span className='text-white font-medium mb-4' aria-required>Tu mensaje</span>
             <textarea
               rows="7"
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you want to say?"
+              placeholder="Quisiera saber mas sobre tus servicios"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary
               text-white rounded-lg outlined-none border-none font-medium'
               required
@@ -124,7 +124,7 @@ const Contact = () => {
             shadow-md shadow-primary rounded-xl'
 
           >
-            {loading ? 'Sending...' : 'Send'}
+            {loading ? 'Enviando...' : 'Enviar'}
 
           </button>
       </form>

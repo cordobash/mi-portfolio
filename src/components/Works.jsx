@@ -86,7 +86,7 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
-          mis trabajos personales
+          practica en
         </p>
 
         <h2 className={styles.sectionHeadText}>
@@ -100,9 +100,8 @@ const Works = () => {
               variants={fadeIn("","",0.1,1)}
               className='mt-3 text-secondary text-[17px] max-w-3xl leading-[20px]'
             >
-              En esta seccion se muestran algunos de mis proyectos personales, en los que 
-              he trabajado en mi tiempo libre a lo largo de los años.
-
+              En esta sección muestro algunos de los proyectos personales y otros en los 
+              que he sido colaborador. 
             </motion.p>
           </div>  
 

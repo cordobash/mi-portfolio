@@ -1,8 +1,8 @@
 // Importando las librerias necesarias
 import { BrowserRouter } from "react-router-dom";
-import {Contact, Experience,About, Feedbacks, Hero, Works,Tech, StarsCanvas, Navbar} from './components';
+import {Contact, Experience,About, Hero, Works,Tech, StarsCanvas, Navbar} from './components';
 import './index.css'
-
+import Adicionales from "./components/Adicionales";
 
 function App() {
   return (
@@ -16,10 +16,12 @@ function App() {
             <About />
             <Tech />
             <Experience />
+           
           
           
             <Works />
             {/* <Feedbacks /> */}
+            <Adicionales />
             <div className="relative z-0">
               <Contact />
               <StarsCanvas />

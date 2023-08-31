@@ -56,44 +56,6 @@ import {
     },
   ];
   
-  // Tecnologias
-// const tecnologias = [
-//   {
-//     nombre: 'React',
-//     icono: reactjs,
-//   },
-//   {
-//     nombre: 'Javascript',
-//     icono: javascript,
-//   },
-
-//   {
-//     nombre: 'Nodejs',
-//     icono: nodejs,
-
-//   },
-
-//   {
-//     nombre: 'Vue',
-//     icono: vuejs,
-//   }
-// ,
-//   {
-//     nombre: 'Java',
-//     icono: java,
-//   }
-// ,
-//   {
-//     nombre: 'C++',
-//     icono: cpp,
-//   }
-//   ,
-//   {
-//     nombre: 'C#',
-//     icono: csharp,
-//   }
-
-// ]
 
 
 
@@ -222,6 +184,45 @@ import {
     
  
   ];
+
+  const expAdicionales = [
+    {
+      tipo: 'Concurso',
+      nombre: 'Hack Mty',
+      imagen: 'https://hackmty.com/assets/images/logo.svg',
+      fecha: 'Septiembre 2022',
+    },
+    {
+      tipo: 'Asistencia a Taller',
+      nombre: 'Desarrollo de aplicaciones profesionales',
+      imagen: 'sitic',
+      fecha: 'Septiembre 2022 - Noviembre 2022'
+    },
+    {
+      tipo: 'Imparticion de Taller',
+      nombre: 'Django X Linux',
+      imagen: 'django',
+      fecha: 'Noviembre 2022',
+    },
+    {
+      tipo: 'Concurso',
+      nombre: 'Hack Banorte',
+      imagen: 'Banorte',
+      fecha: 'Mayo 2023'
+    },
+    {
+      tipo: 'Concurso',
+      nombre: 'ICPC Mexico',
+      imagen: 'icpc',
+      fecha: 'Mayo 2022',
+    },
+    {
+      tipo: 'Concurso',
+      nombre: 'IT San Pedro Contest',
+      imagen: 'itsanpedro',
+      fecha: 'Mayo 2022',
+    }
+  ]
   
   const testimonials = [
     {

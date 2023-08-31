@@ -1,16 +1,15 @@
 import React from 'react'
-// import {BallCanvas} from '../components/canvas/Ball';
-import BallCanvas from '../components/canvas/Ball'
+
 import { SectionWrapper } from '../hoc'
-import { textVariant } from '../utils/motion'
-import { technologies } from '../constants'
+
 import { BiLogoJavascript, BiLogoReact,BiLogoVuejs,BiLogoAndroid,BiLogoTailwindCss,BiLogoMongodb} from 'react-icons/bi'
 import { BiLogoJava } from 'react-icons/bi'
-// import {LiaVuejs} from 'react-icons/lia';
+
 import {SiDotnet} from 'react-icons/si';
 import {FcLinux} from 'react-icons/fc';
 import {TbBrandPython,TbBrandCpp} from 'react-icons/tb';
 import {PiFileSqlDuotone} from 'react-icons/pi';
+import {BsGit} from 'react-icons/bs';
 
 const Tech = () => {
   return (
@@ -27,6 +26,8 @@ const Tech = () => {
       <BiLogoMongodb size='100px'  color='white'   className='hover:opacity-50' style={{color: '#0F9151'}} />
       <PiFileSqlDuotone size='100px'  color='white'   className='hover:opacity-50' style={{color: '#DE7734'}} />
       <TbBrandCpp size='100px'  color='white'   className='hover:opacity-50' style={{color: '#00599C'}} />
+      <BsGit size='100px'  color='orange'   className='hover:opacity-50' />
+
     </div>
   )
 }
