@@ -56,6 +56,8 @@ import certificadoSanPedro from './certsnp.png'
 import certificadoIcpc from './certicpc.png'
 import ccupImage from './ccup2022.png'
 import udemyCertAsp from './udemyAspNet.jpg'
+import recoPiedras from './reco-piedras.png'
+import recoSitic from './reco-sitic.png'
 // Imagenes complementarias
 import hackBanorte from './hackBanorte.jpg'
 export {
@@ -108,4 +110,6 @@ export {
   udemyCertAsp,
   logoUdemy,
   hackBanorte,
+  recoPiedras,
+  recoSitic
 };

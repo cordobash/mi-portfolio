@@ -5,23 +5,22 @@ import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { fadeIn,textVariant } from '../utils/motion'
 
-// import imagen from '../assets/invernaderoDom.jpg'
-// import imagen2 from '../assets/hackmtylogo.svg'
+
 
 
 import { expAdicionales } from '../constants'
-
+import '../index.css'
 
 
 const Experiencia = ({index,tipo,imagen,nombre,lugar,logo_evento,fecha}) =>{
   return(
     <motion.div
       variants={fadeIn("","spring",index * 0.5, 0.75)}
-      className='bg-black-200 h-[420px] p-10 rounded-3xl xs:w-[320px] w-full inline-flex m-[10px]'
-
+      className='bg-black-200 h-[420px] p-10 rounded-3xl xs:w-[320px] w-full inline-flex m-[10px] hover:border-2 hover:border-violet-500 transition-colors duration-500  '
+       
     >
-      <div className='relative w-full h-[170px] gap-5'>
-        <p className={`${styles.sectionSubText} align-center justify-center items-center mb-5 flex`} >{tipo}</p>
+      <div className='relative w-full h-[170px] gap-5 '>
+        <p className={`${styles.sectionSubText} align-center justify-center items-center mb-5 flex `} >{tipo}</p>
           {/* Imagen Experiencia */}
         <img src={imagen} alt='imagen'
           className='w-full h-full object-cover rounded-none rounded-tr-3xl rounded-bl-3xl'
@@ -62,7 +61,7 @@ const Adicionales = () => {
           variants={textVariant()}
         >
 
-            <p className={styles.heroSubText}>Experiencias adicionales y certificaciones</p>
+            <p className={styles.heroSubText}>Reconocimientos</p>
             <h2 className={styles.sectionHeadText
             }>Experiencias adicionales</h2>
             <p className='text-gray-400'>Las experiencias adicionales han contribuido a mi desarrollo academico y profesional, 
@@ -76,7 +75,6 @@ const Adicionales = () => {
             
           
         </div>
-      {/* <Experiencia /> */}
       
       {expAdicionales.map((elemento,index) => {
         return(

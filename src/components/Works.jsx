@@ -7,7 +7,7 @@ import { textVariant, fadeIn } from '../utils/motion';
 
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
-
+import './../index.css'
 const Circulo = ({color}) => {
   return(
     <div className='rounded-full w-4 h-4 inline-flex mr-[5px]' style={{
@@ -28,7 +28,8 @@ const ProjectCard = ({index,name,description,tags,image,source_code_link}) => {
           scale:1,
           speed:450
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" 
+        
       >
 
         <div className='relative w-full h-[230px]'>
@@ -110,6 +111,7 @@ const Works = () => {
               <ProjectCard key={`project-${index}`}
                 index={index}
                 {...project}
+                
               />
               
             ))}

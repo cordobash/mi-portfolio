@@ -47,6 +47,8 @@ import {
     logoUdemy,
     udemyCertAsp,
     hackBanorte,
+    recoPiedras,
+    recoSitic,
   } from "../assets";
   
   import {BiLogoJavascript as iJavascript} from 'react-icons/bi'
@@ -212,7 +214,7 @@ import {
     },
     {
       tipo: 'Imparticion de Taller',
-      imagen: '',
+      imagen: recoPiedras,
       nombre: 'Django X Linux',
       lugar: 'Tecnm Piedras Negras',
       logo_evento: tecnmlogo,
@@ -220,7 +222,7 @@ import {
     },
     {
       tipo: 'Asistencia a Taller',
-      imagen: '',
+      imagen: recoSitic,
       nombre: 'Desarrollo de aplicaciones empresariales',
       lugar: 'SITIC',
       logo_evento: siticlogo,
