@@ -74,7 +74,7 @@ import {
   ];
   
 
-
+export const Tags = ["Kubernetes","Linux","ASP.NET","Help Desk","Git","SQL"]
 
   const services = [
     {

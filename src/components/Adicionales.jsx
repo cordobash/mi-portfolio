@@ -5,18 +5,16 @@ import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { fadeIn,textVariant } from '../utils/motion'
 
-
-
-
 import { expAdicionales } from '../constants'
 import '../index.css'
+
 
 
 const Experiencia = ({index,tipo,imagen,nombre,lugar,logo_evento,fecha}) =>{
   return(
     <motion.div
-      variants={fadeIn("","spring",index * 0.5, 0.75)}
-      className='bg-black-200 h-[420px] p-10 rounded-3xl xs:w-[320px] w-full inline-flex m-[10px] hover:border-2 hover:border-violet-500 transition-colors duration-500  '
+      variants={fadeIn("","spring",index * 0.3, 0.65)}
+      className='bg-black-200 h-[420px] p-10 rounded-3xl xs:w-[300px] w-full inline-flex m-[10px] hover:border-2 hover:border-violet-500 transition-colors duration-500  '
        
     >
       <div className='relative w-full h-[170px] gap-5 '>
@@ -37,6 +35,7 @@ const Experiencia = ({index,tipo,imagen,nombre,lugar,logo_evento,fecha}) =>{
               '
                 
               />
+
               </div>
               
                 {/* Año de la experiencia */}
@@ -99,7 +98,7 @@ const Adicionales = () => {
               <button className=' font-white font-bold 
                 rounded-full h-[50px] w-[300px] hover:bg-violet-500 transition duration-300 ease-linear  hover:text-white hover:text-bold    
                '
-              onClick={() => window.open('https://www.github.com/IGerardoJR','_blank')}
+              onClick={() => window.open('https://github.com/IGerardoJR/Reconocimientos-Diplomas','_blank')}
                >
                 Ver certificaciones
               </button>

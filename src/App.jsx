@@ -5,6 +5,7 @@ import './index.css'
 import Adicionales from "./components/Adicionales";
 
 function App() {
+  console.log(":)");
   return (
         <BrowserRouter>
           <div className="relative z-0 bg-primary" translate="no">
@@ -28,8 +29,8 @@ function App() {
              
               
             </div>
-          </div>
-        </BrowserRouter>
+
+          </div>        </BrowserRouter>
   )
 }
 

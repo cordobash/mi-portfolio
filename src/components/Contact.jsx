@@ -27,30 +27,55 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     console.log(':)');
-    emailjs.send('service_lmtus8m','template_y41o9sy',
-    {
-      from_name: form.name,
-      to_name: 'Isaias',
-      from_email: form.email,
-      to_email:'com148237@gmail.com',
-      message: form.message
-    },
-    'FMEUxepJA6adnXdhh'  
-    ).then(() => {
-      setLoading(false);
-      alert('Gracias por contactarme, te respondere lo mas pronto posible')
-      
-    setForm({
-      name:'',
-      email:'',
-      message:'',
-      })
+    let band = false;
+    const etapaValidacion = () => {
+      if( form.name === '' || form.email === '' || form.message === ''){
+        console.log(":( favor de llenar todos los campos");
+        alert('Por favor, llena todos los campos')
+        band = false;
+        return false;
+      }
+      band = true;
+      return true;
+    }
+   
+
+    etapaValidacion();
+    
+const enviarDetalles = () => {
+  emailjs.send('service_lmtus8m','template_y41o9sy',
+    // emailjs.send('','',
+     {
+       from_name: form.name,
+       to_name: 'Isaias',
+       from_email: form.email,
+       to_email:'com148237@gmail.com',
+       message: form.message
+      },
+      'FMEUxepJA6adnXdhh'  
+    
+      )
+      .then(() => {
+        setLoading(false);
+        alert('Gracias por contactarme, te respondere lo mas pronto posible')
+       
+        
+        setForm({
+          name:'',
+          email:'',
+          message:'',
+        })
     },(error) => {
       setLoading(false);
       console.log(error);
       alert('Algo salio mal, intentalo de nuevo mas tarde')
-
+      
     })
+}
+  
+const continuar = (band) ? enviarDetalles() : alert('Favor de rellenar todos los campos.');
+continuar;
+
   }
     
     
@@ -124,7 +149,7 @@ const Contact = () => {
             shadow-md shadow-primary rounded-xl hover:bg-violet-500 transition duration-400 ease-in'
 
           >
-            {loading ? 'Enviando...' : 'Enviar'}
+            Enviar
 
           </button>
       </form>

@@ -42,7 +42,7 @@ const Hero = () => {
              alt='githubProfile'
             target='_blank'
             className='mt-10 h-[40px] w-[150px] bg-black font-white font-bold lg:inline-flex  items-center justify-center
-            rounded-full cursor-pointer  mr-[15px] hover:animate-bounce xs:min-h[320px] flex '
+            rounded-full cursor-pointer  mr-[15px] hover:bg-black-100 hover:transition-colors hover:duration-200 xs:min-h[320px] flex '
             onClick={() => window.open('https://github.com/IGerardoJR')}
             ><GithubIcon size='25px' style={{marginRight: '7px'}}/> Github</a>
 
@@ -50,8 +50,8 @@ const Hero = () => {
             <a 
             href={universalUrls.linkedinProfile}
             target='_blank'
-            className='mt-10 h-[40px] w-[135px] bg-blue-600 font-white font-bold  lg:inline-flex items-center justify-center
-            rounded-full  xs:min-h[320px] flex mr-[15px] hover:animate-bounce xs:min-[320px] 
+            className='mt-10 h-[40px] w-[135px] bg-blue-600 hover:bg-blue-500 hover:transition-colors hover:duration-200 font-white font-bold  lg:inline-flex items-center justify-center
+            rounded-full  xs:min-h[320px] flex mr-[15px] xs:min-[320px] 
             '
             >
               <LinkedInIcon size='25px' style={{marginRight: '7px'}}/> Linkedin
@@ -61,8 +61,8 @@ const Hero = () => {
           <a 
             href={universalUrls.cvResource}
             target='_blank'
-            className='mt-10 h-[40px] w-[130px] bg-green-600 font-white font-bold  lg:inline-flex items-center justify-center
-            rounded-full   hover:animate-bounce transition-all duration-100 xs:min-h[320px] flex
+            className='mt-10 h-[40px] w-[130px] bg-green-600  font-white font-bold  lg:inline-flex items-center justify-center
+            rounded-full  hover:bg-green-500  hover:transition-colors hover:duration-200 xs:min-h[320px] flex
             '
             >
               <CvIcon size='25px' style={{marginRight: '6px'}}/>Ver CV 

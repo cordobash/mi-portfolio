@@ -6,13 +6,16 @@ import {styles} from '../styles';
 import {experiences} from '../constants/index';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
+// Importamos las tags
+import { Tags } from '../constants/index';
+import '../index.css'
 
 const ExperienceCard = ({experience}) => {
  return( <VerticalTimelineElement
     contentStyle={{ background: '#1d1736', 
   color: '#fff' }}
 
-    contentArrowStyle={{borderRight: '7px solid #232631'}}
+    contentArrowStyle={{borderRight: '15px solid #232631'}}
     date={experience.date}
     iconStyle={{background: experience.iconBg}}
     icon={
@@ -40,6 +43,20 @@ const ExperienceCard = ({experience}) => {
     ))}
 
    </ul>
+{/* Tags */}
+   <h1 className='text-white text-bold mt-[5px] mb-[5px] text-[19px] xs:text-[15px]'>Tags:</h1>
+   {/* Base para los elementos */}
+ 
+        {Tags.map((tag,index)=> (
+            <div className='inline-flex max-w-screen-sm ml-1 mt-2 mb-2  border-white border-2 bg-black rounded-full'>
+              <div className='h-[30px] w-[90px] rounded-full border-white  flex p-1 justify-center items-center '>
+                    <span key={index} className='flex text-[13px]'>
+                          {tag}
+                        </span>
+                </div>
+              </div>
+        ))}
+  
   </VerticalTimelineElement>
 )}
 
@@ -47,7 +64,6 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Estaciones laborales</p>
         <h2 className={styles.sectionHeadText}>Experiencia</h2>
       </motion.div>
 
