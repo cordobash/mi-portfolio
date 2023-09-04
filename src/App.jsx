@@ -16,11 +16,12 @@ function App() {
             </div>
             <About />
             <Tech />
-            <Experience />
+            
            
           
           
             <Works />
+            <Experience />
             {/* <Feedbacks /> */}
             <Adicionales />
             <div className="relative z-0">

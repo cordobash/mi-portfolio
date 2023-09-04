@@ -2,12 +2,12 @@ import React from 'react'
 
 import { SectionWrapper } from '../hoc'
 
-import { BiLogoJavascript, BiLogoReact,BiLogoVuejs,BiLogoAndroid,BiLogoTailwindCss,BiLogoMongodb} from 'react-icons/bi'
+import { BiLogoJavascript, BiLogoReact,BiLogoVuejs,BiLogoAndroid,BiLogoTailwindCss,BiLogoMongodb,BiLogoPython} from 'react-icons/bi'
 import { BiLogoJava } from 'react-icons/bi'
 
 import {SiDotnet} from 'react-icons/si';
 import {FcLinux} from 'react-icons/fc';
-import {TbBrandPython,TbBrandCpp} from 'react-icons/tb';
+import {TbBrandCpp} from 'react-icons/tb';
 import {PiFileSqlDuotone} from 'react-icons/pi';
 import {BsGit} from 'react-icons/bs';
 
@@ -21,7 +21,7 @@ const Tech = () => {
       <SiDotnet size='100px'  color='violet' className='hover:opacity-50' />
       <BiLogoAndroid size='100px'  color='green' className='hover:opacity-50' />
       <FcLinux size='100px'   className='hover:opacity-50' />
-      <TbBrandPython size='100px'  color='white'   className='hover:opacity-50' style={{color: 'lightgreen'}} />
+      <BiLogoPython size='100px'  color='white'   className='hover:opacity-50' style={{color: 'gray'}} />
       <BiLogoTailwindCss size='100px'  color='white'   className='hover:opacity-50' style={{color: '#38BDF8'}} />
       <BiLogoMongodb size='100px'  color='white'   className='hover:opacity-50' style={{color: '#0F9151'}} />
       <PiFileSqlDuotone size='100px'  color='white'   className='hover:opacity-50' style={{color: '#DE7734'}} />

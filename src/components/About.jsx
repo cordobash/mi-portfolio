@@ -21,12 +21,16 @@ const About = () => {
 
     <motion.p variants={fadeIn("","",0.1,1)}
     className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-    Ingeniero en Sistemas Computacionales con habilidades en
-    diversas áreas. Cuento con experiencia en el area de
-    DevOps, sin embargo nunca descarto la posibilidad de aprender algo nuevo.
-    <p>Mi enfoque actual es el desarrollo de software con .NET, pero no puedo negar
-      que el desarrollo front end es uno de mis pasatiempos favoritos.
-    </p>
+    Soy un desarrollador de software con aptitudes en el desarrollo de aplicaciones web,móviles
+    y de escritorio.
+    
+    <p>
+      A nivel profesional he tenido acercamientos en el area de Dev Ops.
+      Sin embargo mi enfoque principal en la actualidad es el desarrollo de software con tecnologias .NET.
+      
+      </p>
+
+
     </motion.p>
 
 

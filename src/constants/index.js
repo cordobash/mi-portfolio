@@ -53,7 +53,7 @@ import {
   
   import {BiLogoJavascript as iJavascript} from 'react-icons/bi'
 
-  // Links que se mostraran en la barra de navegacion
+  // Links que se mostraran en la barra de navegacion y su respectivo id
   export const navLinks = [
     {
       id: "acerca",
@@ -75,6 +75,7 @@ import {
   
 
 export const Tags = ["Kubernetes","Linux","ASP.NET","Help Desk","Git","SQL"]
+
 
   const services = [
     {
@@ -186,7 +187,7 @@ export const Tags = ["Kubernetes","Linux","ASP.NET","Help Desk","Git","SQL"]
 
   const experiences = [
     {
-      title: "Intern at DevOps ",
+      title: "Practicante",
       company_name: "Tyson Foods",
       icon: tyson,
       iconBg: "#002554",
@@ -386,7 +387,7 @@ export const Tags = ["Kubernetes","Linux","ASP.NET","Help Desk","Git","SQL"]
         }
       ],
       image: portfolio,
-      source_code_link:"https://github.com/IGerardoJR/InvernaderoDomotizado-x-Arduino",
+      source_code_link:"https://github.com/IGerardoJR",
     },
     {
       name: "PySpark",

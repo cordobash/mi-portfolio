@@ -101,8 +101,9 @@ const Works = () => {
               variants={fadeIn("","",0.1,1)}
               className='mt-3 text-secondary text-[17px] max-w-3xl leading-[20px]'
             >
-              En esta sección muestro algunos de los proyectos personales y otros en los 
-              que he sido colaborador. 
+              Considero que una de las cosas más importantes a la hora de aprender una nuevas tecnologias es la practica.
+              Por lo que he desarrollado algunos proyectos personales para poner en practica mis conocimientos.En algunos
+              de ellos he sido colaborador y otros los he desarrollado de manera individual.
             </motion.p>
           </div>  
 

@@ -59,12 +59,10 @@ const Adicionales = () => {
         <motion.div
           variants={textVariant()}
         >
-
-            <p className={styles.heroSubText}>Reconocimientos</p>
             <h2 className={styles.sectionHeadText
             }>Experiencias adicionales</h2>
             <p className='text-gray-400'>Las experiencias adicionales han contribuido a mi desarrollo academico y profesional, 
-            ademas de conocer nuevas amistades y entornos. </p>
+            dado que en ellas se atendieron problematicas de campo. </p>
         </motion.div>
 
         <div
@@ -96,7 +94,7 @@ const Adicionales = () => {
 
       <div className='flex flex-row items-center justify-center h-[50px] m-[30px] pb-[20px] '>
               <button className=' font-white font-bold 
-                rounded-full h-[50px] w-[300px] hover:bg-violet-500 transition duration-300 ease-linear  hover:text-white hover:text-bold    
+                rounded-full h-[50px] w-[300px]    hover:text-white hover:text-bold    
                '
               onClick={() => window.open('https://github.com/IGerardoJR/Reconocimientos-Diplomas','_blank')}
                >
