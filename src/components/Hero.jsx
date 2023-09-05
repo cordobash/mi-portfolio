@@ -1,9 +1,9 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import {styles} from '../styles';
-import  ComputersCanvas from './canvas/Computers';
+
 import { SectionWrapper } from '../hoc';
-import CustomButton from './CustomButton';
+
 // Importamos iconos respectivos a utilizar en esta area.
 // Github icon
 import {GrGithub as GithubIcon }  from 'react-icons/gr'

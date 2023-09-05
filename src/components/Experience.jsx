@@ -11,7 +11,7 @@ import { Tags } from '../constants/index';
 import '../index.css'
 
 const ExperienceCard = ({experience}) => {
- return( <VerticalTimelineElement
+ return( <VerticalTimelineElement key={`${experience}-key-`}
     contentStyle={{ background: '#1d1736', 
   color: '#fff' }}
 
@@ -71,7 +71,7 @@ const Experience = () => {
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
           {experiences.map((experience,index) => (
-            <ExperienceCard key={index} experience={experience} />
+            <ExperienceCard key={`${experience}-key-${index}`} experience={experience}/>
           ))}
         </VerticalTimeline>
       </div>

@@ -4,7 +4,7 @@ import { styles } from '../styles'
 
 import { SectionWrapper } from '../hoc'
 import { fadeIn,textVariant } from '../utils/motion'
-import { testimonials } from '../constants'
+// import { testimonials } from '../constants'
 
 
 const FeedbackCard = ({index,testimonial,name,designation,company,image}) =>{

@@ -16,22 +16,16 @@ function App() {
             </div>
             <About />
             <Tech />
-            
-           
-          
-          
             <Works />
             <Experience />
-            {/* <Feedbacks /> */}
             <Adicionales />
             <div className="relative z-0">
               <Contact />
               <StarsCanvas />
              
-              
             </div>
-
-          </div>        </BrowserRouter>
+          </div>  
+   </BrowserRouter>
   )
 }
 
