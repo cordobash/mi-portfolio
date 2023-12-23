@@ -17,8 +17,7 @@ const Hero = () => {
     githubProfile: "https://github.com/IGerardoJR",
     linkedinProfile:
       "https://www.linkedin.com/in/isaias-gerardo-cordova-palomares-1586a2244/",
-    cvResource:
-      "https://lardy-aids.000webhostapp.com/CV%20-%20Isaias%20Cordova-1.pdf",
+    cvResource: "./../../src/assets/CV.pdf",
   };
 
   return (
@@ -49,7 +48,7 @@ const Hero = () => {
           <div className="h-[50px] w-[700px] xs:block">
             {/* Github */}
             <a
-              href="https://github.com/IGerardoJR"
+              href={universalUrls.githubProfile}
               alt="githubProfile"
               target="_blank"
               className="mt-10 h-[40px] w-[150px] bg-black font-white font-bold lg:inline-flex  items-center justify-center
@@ -63,7 +62,7 @@ const Hero = () => {
             <a
               href={universalUrls.linkedinProfile}
               target="_blank"
-              className="mt-10 h-[40px] w-[135px] bg-blue-600 hover:bg-blue-500 hover:transition-colors hover:duration-200 font-white font-bold  lg:inline-flex items-center justify-center
+              className="mt-10 h-[40px] w-[150px] bg-blue-600 hover:bg-blue-500 hover:transition-colors hover:duration-200 font-white font-bold  lg:inline-flex items-center justify-center
             rounded-full  xs:min-h[320px] flex mr-[15px] xs:min-[320px] 
             "
             >
@@ -74,13 +73,14 @@ const Hero = () => {
 
             <a
               href={universalUrls.cvResource}
+              download
               target="_blank"
-              className="mt-10 h-[40px] w-[130px] bg-green-600  font-white font-bold  lg:inline-flex items-center justify-center
+              className="mt-10 h-[40px] w-[150px] bg-green-600  font-white font-bold  lg:inline-flex items-center justify-center
             rounded-full  hover:bg-green-500  hover:transition-colors hover:duration-200 xs:min-h[320px] flex
             "
             >
-              <CvIcon size="25px" style={{ marginRight: "6px" }} />
-              Ver CV
+              <CvIcon size="25px" style={{ marginRight: "7px" }} />
+              CV
             </a>
           </div>
         </div>
@@ -93,7 +93,7 @@ const Hero = () => {
         <a href="#about">
           <div
             className="w-[35px] h-[64px] rounded-full border-2  border-secondary
-              flex justify-center items-start p-2"
+              flex justify-center items-start p-2 max-lg:hidden"
           >
             <motion.dev
               animate={{
