@@ -9,7 +9,6 @@ import { SectionWrapper } from "../hoc";
 import { GrGithub as GithubIcon } from "react-icons/gr";
 // Linkedin icon
 import { BsLinkedin as LinkedInIcon } from "react-icons/bs";
-import { RiFilePaper2Line as CvIcon } from "react-icons/ri";
 
 const Hero = () => {
   const universalUrls = {
@@ -17,7 +16,6 @@ const Hero = () => {
     githubProfile: "https://github.com/IGerardoJR",
     linkedinProfile:
       "https://www.linkedin.com/in/isaias-gerardo-cordova-palomares-1586a2244/",
-    cvResource: "./../../src/assets/CV.pdf",
   };
 
   return (
@@ -68,19 +66,6 @@ const Hero = () => {
             >
               <LinkedInIcon size="25px" style={{ marginRight: "7px" }} />{" "}
               Linkedin
-            </a>
-            {/* Curriculum Vitae */}
-
-            <a
-              href={universalUrls.cvResource}
-              download
-              target="_blank"
-              className="mt-10 h-[40px] w-[150px] bg-green-600  font-white font-bold  lg:inline-flex items-center justify-center
-            rounded-full  hover:bg-green-500  hover:transition-colors hover:duration-200 xs:min-h[320px] flex
-            "
-            >
-              <CvIcon size="25px" style={{ marginRight: "7px" }} />
-              CV
             </a>
           </div>
         </div>
