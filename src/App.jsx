@@ -14,7 +14,6 @@ import "./index.css";
 import Adicionales from "./components/Adicionales";
 
 function App() {
-  console.log(":)");
   return (
     <BrowserRouter>
       <div
