@@ -30,7 +30,8 @@ import udemyCertAsp from './udemyAspNet.jpg'
 import recoPiedras from './reco-piedras.png'
 import recoSitic from './reco-sitic.png'
 // Imagenes complementarias
-import hackBanorte from './hackBanorte.jpg'
+import hackBanorte from './hackBanorte.jpg';
+import sorteameScreen from './sorteameapp_menu.png';
 export {
   github,
   herobg,
@@ -60,5 +61,6 @@ export {
   logoUdemy,
   hackBanorte,
   recoPiedras,
-  recoSitic
+  recoSitic,
+  sorteameScreen
 };

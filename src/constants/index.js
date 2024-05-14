@@ -27,7 +27,8 @@ import {
     recoPiedras,
     recoSitic,
     github,
-    herobg
+    herobg,
+    sorteameScreen
   } from "../assets";
   
 
@@ -68,7 +69,7 @@ export const Tags = ["Kubernetes","Linux","ASP.NET","Help Desk","Git","SQL"];
     nodejs: "#339933",
     swift: "#FA7343",
     linux: "#FCC624",
-    flutter: "#02569B",
+    dart: "#02569B",
     java: "#007396",
     blazor: "#512BD4",
     windowManager: "#FE7E7E",
@@ -83,10 +84,8 @@ export const Tags = ["Kubernetes","Linux","ASP.NET","Help Desk","Git","SQL"];
     ini: "#FFD580",
     ipynb: "#F37726",
     python: "#3776AB",
-    aspnet: "#512BD4",
-    
-    
-    
+    aspnet: "#512BD4", 
+    flutter:"#38B2AC"
   }
 
   const experiences = [
@@ -178,7 +177,28 @@ export const Tags = ["Kubernetes","Linux","ASP.NET","Help Desk","Git","SQL"];
   
   
   const projects = [
-    {
+    
+      {
+        name: "SorteaMe",
+        description: "Aplicacion mobile utilizando el framework Flutter, cuya funcinalidad radica en la realizacion de Sorteos.El principal objetivo de esta aplicacion fue el emplear los conocimientos adquiridos en ese momento utilizando ese framework. La aplicacion hace uso de base de datos local, animaciones, complejidad de estado",
+        tags: [
+          {
+            name: "Flutter",
+            color: paletaColores.flutter
+          },
+          {
+            name: "Android",
+            color: paletaColores.android
+          },
+          {
+            name: "Dart",
+            color:paletaColores.dart
+          }
+        ],
+        image: sorteameScreen,
+        source_code_link: "https://github.com/IGerardoJR/sorteame_app"
+      },
+      {
       name: "Dotstaller",
       description: "Script para la instalacion y automatizacion de mis archivos personalizados utilizados en el gestor de ventanas BSPWM, el script de momento cuenta con compatibilidad con Arch Linux",
       tags: [
